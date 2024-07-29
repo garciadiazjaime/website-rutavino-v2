@@ -119,7 +119,7 @@ export default function Content(props: { slug: string }) {
               </li>
               <li>
                 <a href="https://www.chicagomusiccompass.com/">
-                  Concerts & Events in Chicago
+                  Concerts and Events in Chicago
                 </a>
               </li>
             </ul>
