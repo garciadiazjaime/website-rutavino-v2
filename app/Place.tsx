@@ -15,7 +15,7 @@ export default function Page(props: Place) {
       />
       <div style={{ margin: 12 }}>
         <h3 style={{ margin: "12px 0" }}>{props.name}</h3>
-        <p>{props.description}</p>
+        <p>{props.description.default}</p>
         <div style={{ marginTop: 20, display: "flex", gap: 20 }}>
           {props.instagram && (
             <a

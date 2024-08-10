@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 
 import { getMetadata } from "@/app/support";
 import Place from "@/app/Place";
-import places from "@/app/places";
+import data from "@/app/places";
+import { Categories } from "@/app/types";
 
 export function generateMetadata({
   params,
@@ -15,8 +16,19 @@ export function generateMetadata({
   return metadata;
 }
 
+const slugCategoryMapper: { [key: string]: string } = {
+  restaurantes: "food",
+  vinedos: "wine",
+  hoteles: "hotel",
+};
+
 export default function Content(props: { slug: string }) {
   const metadata = getMetadata(props.slug);
+
+  const places = data.filter(
+    (item) =>
+      item.categories[slugCategoryMapper[props.slug] as keyof Categories]
+  );
 
   const getMenuActiveItem = (value: string) => {
     if (value === props.slug) {
