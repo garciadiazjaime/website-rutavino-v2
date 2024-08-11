@@ -25,10 +25,13 @@ const slugCategoryMapper: { [key: string]: string } = {
 export default function Content(props: { slug: string }) {
   const metadata = getMetadata(props.slug);
 
-  const places = data.filter(
-    (item) =>
-      item.categories[slugCategoryMapper[props.slug] as keyof Categories]
-  );
+  const places =
+    props.slug === "home"
+      ? data
+      : data.filter(
+          (item) =>
+            item.categories[slugCategoryMapper[props.slug] as keyof Categories]
+        );
 
   const getMenuActiveItem = (value: string) => {
     if (value === props.slug) {
