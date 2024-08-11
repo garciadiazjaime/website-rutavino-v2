@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 import { Place } from "@/app/types";
-import { Instagram, Maps, Website } from "./svgs";
+import { Instagram, Maps, Website } from "../svgs";
 
-export default function Page(props: Place) {
+export default function Card(props: Place) {
   return (
-    <div style={{ marginTop: 100 }} key={props.slug}>
+    <div key={props.slug}>
       <Image
         src={`/valle-guadalupe/${props.slug}/${props.images.cover}`}
         alt={props.name}

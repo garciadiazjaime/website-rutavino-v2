@@ -1,4 +1,4 @@
-import Content from "@/app/Content";
+import Content from "@/app/components/Content";
 import { sections } from "@/app/support";
 
 export async function generateStaticParams() {

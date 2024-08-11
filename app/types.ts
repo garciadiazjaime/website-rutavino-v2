@@ -8,6 +8,8 @@ export interface Categories {
 export interface Place {
   name: string;
   slug: string;
+  lat: number;
+  lng: number;
   maps: string;
   instagram: string;
   categories: Categories;

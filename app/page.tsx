@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 
-import Content from "@/app/Content";
 import { getMetadata } from "@/app/support";
+
+import Menu from "@/app/components/Menu";
+import Cover from "@/app/components/Cover";
+import Container from "@/app/Container";
+import places from "@/app/places";
 
 export function generateMetadata(): Metadata {
   const metadata = getMetadata("home");
@@ -10,5 +14,15 @@ export function generateMetadata(): Metadata {
 }
 
 export default function Home() {
-  return <Content slug="home" />;
+  const randomPlaceIndex = Math.floor(Math.random() * places.length);
+
+  return (
+    <div>
+      <Menu slug="home" />
+
+      <Cover slug="home" />
+
+      <Container selectedIndex={randomPlaceIndex} />
+    </div>
+  );
 }

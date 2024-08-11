@@ -1,10 +1,12 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 
-import { getMetadata } from "@/app/support";
-import Place from "@/app/Place";
+import Card from "@/app/components/Card";
 import data from "@/app/places";
 import { Categories } from "@/app/types";
+import Menu from "@/app/components/Menu";
+import Cover from "@/app/components/Cover";
+
+import { getMetadata } from "@/app/support";
 
 export function generateMetadata({
   params,
@@ -23,8 +25,6 @@ const slugCategoryMapper: { [key: string]: string } = {
 };
 
 export default function Content(props: { slug: string }) {
-  const metadata = getMetadata(props.slug);
-
   const places =
     props.slug === "home"
       ? data
@@ -33,13 +33,6 @@ export default function Content(props: { slug: string }) {
             item.categories[slugCategoryMapper[props.slug] as keyof Categories]
         );
 
-  const getMenuActiveItem = (value: string) => {
-    if (value === props.slug) {
-      return { fontWeight: "bold", borderBottom: "4px solid #000" };
-    }
-
-    return {};
-  };
   return (
     <main
       style={{
@@ -48,54 +41,13 @@ export default function Content(props: { slug: string }) {
         margin: "0 auto",
       }}
     >
-      <nav
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: 16,
-        }}
-      >
-        <Link
-          href="/"
-          style={{ padding: "24px 12px", ...getMenuActiveItem("home") }}
-        >
-          Ruta del Vino
-        </Link>
-        <Link
-          href="/valle-guadalupe/vinedos"
-          style={{ padding: "24px 12px", ...getMenuActiveItem("vinedos") }}
-        >
-          Viñedos
-        </Link>
-        <Link
-          href="/valle-guadalupe/restaurantes"
-          style={{ padding: "24px 12px", ...getMenuActiveItem("restaurantes") }}
-        >
-          Restaurantes
-        </Link>
-        <Link
-          href="/valle-guadalupe/hoteles"
-          style={{ padding: "24px 12px", ...getMenuActiveItem("hoteles") }}
-        >
-          Hoteles
-        </Link>
-      </nav>
+      <Menu slug={props.slug} />
 
-      <section
-        style={{
-          padding: "220px 12px",
-          backgroundColor: "#660253",
-          color: "white",
-          textAlign: "center",
-        }}
-      >
-        <h1 style={{ fontSize: 48 }}>{metadata.title as string}</h1>
-        <h2 style={{ marginTop: 40 }}>La Ruta del Vino Ensenada</h2>
-      </section>
+      <Cover slug={props.slug} />
 
       <section>
         {places.map((item) => (
-          <Place {...item} key={item.slug} />
+          <Card {...item} key={item.slug} />
         ))}
       </section>
 
