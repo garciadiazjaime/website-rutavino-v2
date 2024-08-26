@@ -7,7 +7,7 @@ import { Place } from "@/app/types";
 
 const containerStyle = {
   width: "100%",
-  height: "600px",
+  height: "1057px",
 };
 
 const center = {

@@ -5,7 +5,7 @@ export default [
     maps: "https://maps.app.goo.gl/zjfqV7znHdt8rVQr7",
     lat: 32.021271,
     lng: -116.641715,
-    instagram: "https://www.instagram.com/dontomasvinedooficial",
+    instagram: "https://www.instagram.com/dontomasvinedooficial/",
     categories: {
       food: true,
       wine: true,
@@ -256,5 +256,189 @@ export default [
     },
     phone: "526461034041",
     email: "",
+  },
+  {
+    name: "Aires de Lavanda",
+    slug: "aires-de-lavanda",
+    maps: "https://maps.app.goo.gl/tCtdkNw4AEpHeDX27",
+    lat: 32.0021552,
+    lng: -116.678564,
+    instagram: "https://www.instagram.com/airesdelavanda/",
+    categories: {
+      food: false,
+      wine: true,
+      hotel: false,
+    },
+    images: {
+      cover: "cover.jpg",
+    },
+    website: "https://www.airesdelavanda.com/",
+    description: {
+      default:
+        "Degustación de vinos jóvenes de Rondo del Valle (1 tinto, 1 rosado y 1 blanco) y de cerveza artesanal de nuestras 4 etiquetas. (Blonde Ale, Stout, Stout con lavanda, Wine Beer).",
+    },
+    phone: "526644146845",
+    email: "contacto@airesdelavanda.com",
+  },
+  {
+    name: "Casa Relieve",
+    slug: "casa-relieve",
+    maps: "https://maps.app.goo.gl/PZUyfuD1vTYeWpw57",
+    lat: 31.9898609,
+    lng: -116.6838986,
+    instagram: "https://www.instagram.com/casarelieve/",
+    categories: {
+      food: true,
+      wine: true,
+      hotel: true,
+    },
+    images: {
+      cover: "cover.jpg",
+    },
+    website: "https://relievevinicola.mx/",
+    description: {
+      default:
+        "Qué mejor plan que disfrutar el atardecer Del Valle con nuestro Ciclo Nebbiolo.",
+    },
+    phone: "52646947999",
+    email: "",
+  },
+  {
+    name: "Entrevalle Hotel Boutique",
+    slug: "entrevalle-hotel-boutique",
+    maps: "https://maps.app.goo.gl/jjhHaddmBpqKCvnz5",
+    lat: 32.0098576,
+    lng: -116.6450206,
+    instagram: "https://www.instagram.com/entrevallemx/",
+    categories: {
+      food: true,
+      wine: false,
+      hotel: true,
+    },
+    images: {
+      cover: "cover.jpg",
+    },
+    website: "https://www.hotelentrevalle.com/",
+    description: {
+      default:
+        "Quizá no conoces el Arroz Entrevalle que es una joya con sabor impecable, un arroz al estilo risotto con pulpo a las brazas, camarones, almejas y Steak delicioso en su punto. Sin duda debes probarlo en Entrevalle Restaurant",
+    },
+    phone: "5216462898801",
+    email: "entrevallemx@gmail.com",
+  },
+  {
+    name: "Finca Altozano",
+    slug: "finca-altozano",
+    maps: "https://maps.app.goo.gl/A99BGEe27Z2Mdcyy9",
+    lat: 32.0586791,
+    lng: -116.5325873,
+    instagram: "https://www.instagram.com/faltozano_valle/",
+    categories: {
+      food: true,
+      wine: true,
+      hotel: false,
+    },
+    images: {
+      cover: "cover.jpg",
+    },
+    website: "https://fincaltozano.com/",
+    description: {
+      default:
+        "En Finca Altozano, buscamos que nuestros platillos estén preparados con productos excepcionales de los huertos, ranchos y mares mas cercanos. Ofrecemos vinos regionales y cerveza artesanal mexicana para hacer de tu visita, una experiencia culinaria inolvidable",
+    },
+    phone: "526466881016",
+    email: "info@fincaltozano.com",
+  },
+  {
+    name: "Hotel Partana",
+    slug: "hotel-partana",
+    maps: "https://maps.app.goo.gl/yhehDjYXNtz2gzB86",
+    lat: 32.0657664,
+    lng: -116.6011682,
+    instagram: "https://www.instagram.com/hotelpartana/",
+    categories: {
+      food: false,
+      wine: false,
+      hotel: true,
+    },
+    images: {
+      cover: "cover.jpg",
+    },
+    website: "https://partanahotel.com/",
+    description: {
+      default:
+        "El hotel boutique en Valle de Guadalupe dentro de Finca Altozano",
+    },
+    phone: "",
+    email: "",
+  },
+  {
+    name: "La Justina Valle",
+    slug: "la-justina-valle",
+    maps: "https://maps.app.goo.gl/WCxkdaGknZksqDQAA",
+    lat: 32.0336735,
+    lng: -116.6729513,
+    instagram: "https://www.instagram.com/lajustinavalle/",
+    categories: {
+      food: true,
+      wine: false,
+      hotel: false,
+    },
+    images: {
+      cover: "cover.jpg",
+    },
+    website: "https://lajustinavalle.com.mx/",
+    description: {
+      default:
+        "Saborea el alma del valle en cada bocado. Nuestro menú fusiona lo fresco con lo innovador para deleitar tus sentidos",
+    },
+    phone: "526631983926",
+    email: "lajustinavallereservaciones@gmail.com",
+  },
+  {
+    name: "Ojo Azul Resort",
+    slug: "ojo-azul-resort",
+    maps: "https://maps.app.goo.gl/obhWHMohBDW4EYux9",
+    lat: 32.0916135,
+    lng: -116.6112134,
+    instagram: "https://www.instagram.com/ojoazulresort/",
+    categories: {
+      food: true,
+      wine: true,
+      hotel: true,
+    },
+    images: {
+      cover: "cover.jpg",
+    },
+    website: "https://ojoazulresort.com/",
+    description: {
+      default:
+        "Construido a partir de los elementos naturales de El Valle, este resort de servicio completo cuenta con 30 cabañas, un restaurante asador a leña, un lugar para eventos y una exquisita bodega privada de vinos.",
+    },
+    phone: "526469784600",
+    email: "info@ojoazulresort.com",
+  },
+  {
+    name: "Villa Torél",
+    slug: "villa-torel",
+    maps: "https://maps.app.goo.gl/KrGtCuXJ1XES31iR6",
+    lat: 31.9751705,
+    lng: -116.6639176,
+    instagram: "https://www.instagram.com/villatorelmx/",
+    categories: {
+      food: true,
+      wine: false,
+      hotel: false,
+    },
+    images: {
+      cover: "cover.jpg",
+    },
+    website: "https://villatorel.com/",
+    description: {
+      default:
+        "La cocina de Villa Torél es una reflexión de la historia personal del Chef Alfredo Villanueva y su mujer Denise, en el contexto más envidiable para un cocinero mexicano: Baja California. Con acceso muy cercano a productos increíbles del mar, de huertos, granjas, vinos y un recurso humano maravilloso.",
+    },
+    phone: "526462676688",
+    email: "hola@villatorel.com",
   },
 ];

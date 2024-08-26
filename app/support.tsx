@@ -58,3 +58,9 @@ export const sections: Section = {
 export function getMetadata(section: string) {
   return sections[section];
 }
+
+export const tokens = {
+  colors: {
+    primary: "#660253",
+  },
+};

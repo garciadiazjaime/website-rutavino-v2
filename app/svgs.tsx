@@ -1,4 +1,4 @@
-const fill = "rgb(102, 2, 83)";
+const fill = "rgb(0, 0, 0)";
 
 export const Instagram = () => (
   <svg width="40" height="40" viewBox="0 0 24 24">

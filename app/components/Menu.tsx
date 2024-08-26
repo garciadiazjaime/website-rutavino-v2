@@ -12,35 +12,44 @@ export default function Menu(props: { slug: string }) {
   return (
     <nav
       style={{
-        display: "flex",
-        justifyContent: "space-between",
-        fontSize: 16,
+        borderBottom: "1px solid #ccc",
+        background: "white",
       }}
     >
-      <Link
-        href="/"
-        style={{ padding: "24px 12px", ...getMenuActiveItem("home") }}
+      <div
+        style={{
+          maxWidth: 1180,
+          fontSize: 16,
+          margin: "0 auto",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
       >
-        Ruta del Vino
-      </Link>
-      <Link
-        href="/valle-guadalupe/vinedos"
-        style={{ padding: "24px 12px", ...getMenuActiveItem("vinedos") }}
-      >
-        Viñedos
-      </Link>
-      <Link
-        href="/valle-guadalupe/restaurantes"
-        style={{ padding: "24px 12px", ...getMenuActiveItem("restaurantes") }}
-      >
-        Restaurantes
-      </Link>
-      <Link
-        href="/valle-guadalupe/hoteles"
-        style={{ padding: "24px 12px", ...getMenuActiveItem("hoteles") }}
-      >
-        Hoteles
-      </Link>
+        <Link
+          href="/"
+          style={{ padding: "24px 12px", ...getMenuActiveItem("home") }}
+        >
+          Ruta del Vino
+        </Link>
+        <Link
+          href="/valle-guadalupe/vinedos"
+          style={{ padding: "24px 12px", ...getMenuActiveItem("vinedos") }}
+        >
+          Viñedos
+        </Link>
+        <Link
+          href="/valle-guadalupe/restaurantes"
+          style={{ padding: "24px 12px", ...getMenuActiveItem("restaurantes") }}
+        >
+          Restaurantes
+        </Link>
+        <Link
+          href="/valle-guadalupe/hoteles"
+          style={{ padding: "24px 12px", ...getMenuActiveItem("hoteles") }}
+        >
+          Hoteles
+        </Link>
+      </div>
     </nav>
   );
 }

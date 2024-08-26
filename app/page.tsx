@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { getMetadata } from "@/app/support";
 
 import Menu from "@/app/components/Menu";
-import Cover from "@/app/components/Cover";
 import Container from "@/app/Container";
 import places from "@/app/places";
 
@@ -19,8 +18,6 @@ export default function Home() {
   return (
     <div>
       <Menu slug="home" />
-
-      <Cover slug="home" />
 
       <Container selectedIndex={randomPlaceIndex} />
     </div>
